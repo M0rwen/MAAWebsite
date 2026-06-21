@@ -292,6 +292,19 @@
             display: flex;
             flex-direction: column;
             gap: 0;
+            flex: 1;
+        }
+
+        .project-column > .video-container,
+        .project-column > div[style*="max-width"] {
+            height: 350px;
+            margin-top: 20px !important;
+        }
+
+        .project-column > .video-container iframe,
+        .project-column > div[style*="max-width"] img {
+            height: 100%;
+            object-fit: cover;
         }
 
         .project-card {
@@ -405,6 +418,11 @@
             width: 100%;
             height: 450px;
             border: none;
+            object-fit: cover;
+        }
+
+        .project-column .video-container iframe {
+            height: 350px;
         }
 
         @media (max-width: 768px) {
